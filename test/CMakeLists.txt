@@ -9,3 +9,6 @@ add_test(NAME lm_test COMMAND test_lm)
 # Broyden法テスト
 add_executable(test_broyden broyden_solver.f90 test_broyden.f90)
 add_test(NAME broyden_test COMMAND test_broyden)
+
+# 性能比較ベンチマーク
+add_executable(benchmark minimize.f lm_solver.f90 broyden_solver.f90 benchmark.f90)
