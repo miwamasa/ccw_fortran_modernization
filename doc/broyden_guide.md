@@ -81,7 +81,7 @@ Output: x* (F(x*)≈0 の解)
 
 初期点が解に十分近く、初期Jacobian近似 $B_0$ が十分良い場合、Broyden法は**超線形収束 (superlinear convergence)** を示す：
 
-$$\lim_{k \to \infty} \frac{\|x_{k+1} - x^*\|}{\|x_k - x^*\|} = 0$$
+$$\lim_{k \to \infty} \frac{\|x_{k+1} - x^{*}\|}{\|x_k - x^{*}\|} = 0$$
 
 これはNewton法の二次収束より遅いが、線形収束より速い。
 
